@@ -3,7 +3,7 @@
   flex-direction: column;
   color: #566474;
   border-right: 1px solid #ebf0f5;
-  height: calc(100vh - 50px);
+  height: 90rem;
 }
 
 .sidebar__item {

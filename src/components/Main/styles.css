@@ -1,0 +1,361 @@
+.dashboard__container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  /* padding: 20px; */
+}
+
+p {
+  margin: 0;
+}
+
+.dashboard__item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.dashboard__item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.skill__heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #566474;
+  text-align: start;
+  float: left;
+  margin-left: 1rem;
+}
+
+.skill__div {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.html__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background: #fff;
+  border: 1px solid #ebf0f5;
+}
+
+.html__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.html__button {
+  display: flex;
+  width: 12rem;
+  height: 4rem;
+  padding: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #142683;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: -0.28px;
+}
+
+.html__innerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.html__heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #222f3e;
+  text-align: start;
+}
+
+.html__para {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #566474;
+  text-align: start;
+}
+
+/* Stat Styles */
+
+.stat__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  gap: 4px;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background: #fff;
+  border: 1px solid #ebf0f5;
+}
+
+.stat__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e272e;
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+.stat__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.8rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.stat__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ebf0f5;
+}
+
+.stat__icon {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebf0f5;
+  border-radius: 50%;
+}
+
+.stat__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+  margin-left: 2rem;
+}
+
+.stat__number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e272e;
+  letter-spacing: -0.44px;
+}
+
+.stat__type {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #9eaab7;
+  letter-spacing: -0.24px;
+}
+
+#stat__last__item {
+  border-right: none;
+}
+
+.emoji {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.comp__conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  display: flex;
+  width: 100%;
+  border-radius: 1re;
+  padding: 1rem 2rem;
+  background: #fff;
+  border: 1px solid #ebf0f5;
+}
+
+.comp__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e272e;
+  text-align: start;
+}
+
+.comp__para__div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.comp__para {
+  color: #566474;
+  font-size: 1.4rem;
+  line-height: 150%;
+  /* 21px */
+  letter-spacing: -0.28px;
+  flex: 1;
+}
+
+.comp__graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  margin-top: 1rem;
+}
+
+/* progress component styles */
+
+.progress__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.2rem;
+  display: flex;
+  /* width: 100%; */
+  border-radius: 10px;
+  padding: 0.8rem 1.6rem;
+  background: #fff;
+  border: 1px solid #ebf0f5;
+}
+
+.syllabus__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e272e;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+.syllabus__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  /* margin-bottom: 1rem; */
+}
+
+.progress__heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #566474;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.progress__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.progress__percentage {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #566474;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+/* analysis styles */
+
+.analysis__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  display: flex;
+  /* width: 100%; */
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  background: #fff;
+  border: 1px solid #ebf0f5;
+}
+
+.analysis__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.analysis__heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e272e;
+  text-align: start;
+}
+
+.analysis__score {
+  color: #438af6;
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.analysis__para {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #566474;
+  text-align: start;
+}
+
+#analysis__statement {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #566474;
+  text-align: start;
+}
+
+.analysis__pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28rem;
+  margin-top: 1rem;
+}
