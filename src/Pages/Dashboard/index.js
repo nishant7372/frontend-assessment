@@ -2,6 +2,7 @@ import { useState } from "react";
 import Aside from "../../components/Aside";
 import Main from "../../components/Main";
 import styles from "./styles.module.css";
+import Modal from "../../components/Modal";
 
 const Dashboard = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -22,6 +23,18 @@ const Dashboard = () => {
           correctAnswers={correctAnswers}
         />
       </div>
+      {modalOpen && (
+        <Modal
+          setModalOpen={setModalOpen}
+          modalOpen={modalOpen}
+          rank={rank}
+          setRank={setRank}
+          percentile={percentile}
+          setPercentile={setPercentile}
+          correctAnswers={correctAnswers}
+          setCorrectAnswers={setCorrectAnswers}
+        />
+      )}
     </div>
   );
 };

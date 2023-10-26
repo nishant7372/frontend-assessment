@@ -3,11 +3,6 @@
   justify-content: space-between;
   grid-template-columns: 2fr 1fr;
   grid-gap: 2rem;
-  /* padding: 20px; */
-}
-
-p {
-  margin: 0;
 }
 
 .dashboard__item1 {
@@ -223,7 +218,6 @@ p {
   color: #566474;
   font-size: 1.4rem;
   line-height: 150%;
-  /* 21px */
   letter-spacing: -0.28px;
   flex: 1;
 }
@@ -236,8 +230,6 @@ p {
   margin-top: 1rem;
 }
 
-/* progress component styles */
-
 .progress__container {
   display: flex;
   flex-direction: column;
@@ -245,7 +237,6 @@ p {
   align-items: start;
   gap: 0.2rem;
   display: flex;
-  /* width: 100%; */
   border-radius: 10px;
   padding: 0.8rem 1.6rem;
   background: #fff;
@@ -268,7 +259,6 @@ p {
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
-  /* margin-bottom: 1rem; */
 }
 
 .progress__heading {
@@ -287,6 +277,7 @@ p {
   background-color: #fff;
   border-radius: 1rem;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .progress__percentage {
@@ -297,16 +288,13 @@ p {
   margin-right: 1rem;
 }
 
-/* analysis styles */
-
 .analysis__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.3rem;
+  gap: 1rem;
   display: flex;
-  /* width: 100%; */
   border-radius: 1rem;
   padding: 0.5rem 2rem;
   background: #fff;

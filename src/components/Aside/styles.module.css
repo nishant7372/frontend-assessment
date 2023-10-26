@@ -3,7 +3,7 @@
   flex-direction: column;
   color: #566474;
   border-right: 1px solid #ebf0f5;
-  height: 90rem;
+  height: 85rem;
 }
 
 .sidebar__item {
@@ -42,5 +42,5 @@
 
 p {
   font-size: 1.6rem;
-  padding: 1rem 1rem;
+  padding: 0.4rem 1rem;
 }

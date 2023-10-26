@@ -4,34 +4,7 @@ import Syllabus from "./Syllabus";
 import { PieChart, Pie, Cell, ReferenceLine } from "recharts";
 import { LineChart, Line, XAxis, Tooltip } from "recharts";
 import images from "../../constants/images";
-
-const graphData = [
-  {
-    name: "0%",
-    value: 24,
-  },
-  {
-    name: "20%",
-    value: 13,
-  },
-  {
-    name: "40%",
-    value: 98,
-  },
-  {
-    name: "60%",
-    value: 39,
-  },
-  {
-    name: "80%",
-    value: 48,
-  },
-  {
-    name: "100%",
-    value: 38,
-  },
-];
-const COLORS = ["rgba(67, 138, 246, 1)", "rgba(67, 138, 246, 0.1)"];
+import { COLORS, graphData } from "../../constants/data";
 
 const Main = ({
   setModalOpen,
@@ -51,9 +24,7 @@ const Main = ({
       { name: "Group A", value: correctAnswers },
       { name: "Group B", value: 15 - correctAnswers },
     ];
-    // console.log('Data before update:', data);
     setData(newData);
-    // console.log('Data after update:', newData);
   }, [correctAnswers]);
 
   return (
@@ -77,7 +48,6 @@ const Main = ({
             className="html__button openModalBtn"
             onClick={() => {
               setModalOpen(true);
-              console.log(modalOpen);
             }}
           >
             Update
@@ -135,7 +105,6 @@ const Main = ({
           </div>
 
           <div className="comp__graph">
-            {/* <ResponsiveContainer width="100%" height="100%"> */}
             <LineChart
               width={700}
               height={400}
@@ -147,12 +116,8 @@ const Main = ({
                 bottom: 5,
               }}
             >
-              {/* <CartesianGrid strokeDasharray="5 5" /> */}
-
               <XAxis dataKey="name" />
-              {/* <YAxis /> */}
               <Tooltip />
-              {/* <Legend /> */}
               <Line
                 type="monotone"
                 dataKey="value"
@@ -162,7 +127,7 @@ const Main = ({
               <ReferenceLine
                 x="40%"
                 stroke="#C8D6E5"
-                label="Percentile"
+                label="Your Score"
                 strokeDasharray="5 5"
               />
               <ReferenceLine
@@ -172,7 +137,6 @@ const Main = ({
                 strokeDasharray="5 5"
               />
             </LineChart>
-            {/* </ResponsiveContainer> */}
           </div>
         </div>
       </div>
@@ -216,7 +180,9 @@ const Main = ({
             <span id="analysis__statement">
               {" "}
               {correctAnswers < 10
-                ? "However, it still needs some improvements"
+                ? correctAnswers > 5
+                  ? "However, it still needs some improvements"
+                  : "You need a lot of improvement"
                 : "Good going, Keep up the good work"}
             </span>
           </p>
@@ -224,8 +190,8 @@ const Main = ({
           <div className="analysis__pie">
             <PieChart width={250} height={250}>
               <foreignObject
-                x={(250 - 100) / 2} // Centering horizontally
-                y={(250 - 50) / 2} // Centering vertically
+                x={(250 - 50) / 2}
+                y={(250 - 50) / 2}
                 width={100}
                 height={100}
                 style={{
