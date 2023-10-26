@@ -173,3 +173,11 @@
   letter-spacing: -0.32px;
   cursor: pointer;
 }
+
+.modal__btn__secondary:hover {
+  background-color: #dfdfdf;
+}
+
+.modal__btn__primary:hover {
+  background-color: #051046;
+}

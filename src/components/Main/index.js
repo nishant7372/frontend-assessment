@@ -127,7 +127,13 @@ const Main = ({
               <ReferenceLine
                 x="40%"
                 stroke="#C8D6E5"
-                label="Your Score"
+                label=""
+                strokeDasharray="5 5"
+              />
+              <ReferenceLine
+                x="37%"
+                stroke="#C8D6E5"
+                label=""
                 strokeDasharray="5 5"
               />
               <ReferenceLine

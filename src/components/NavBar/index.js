@@ -9,7 +9,7 @@ const Navbar = () => {
       </div>
       <div className={styles["profile-box"]}>
         <img src={images.avatar} className={styles["profile-avatar"]} alt="" />
-        <div className={styles["profile-name"]}>Nishant Singh</div>
+        <div className={styles["profile-name"]}>Siddharth Jain</div>
       </div>
     </div>
   );

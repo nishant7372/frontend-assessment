@@ -7,6 +7,7 @@ export const graphData = [
     name: "20%",
     value: 23,
   },
+
   {
     name: "40%",
     value: 64,
@@ -15,6 +16,7 @@ export const graphData = [
     name: "60%",
     value: 30,
   },
+
   {
     name: "80%",
     value: 45,
