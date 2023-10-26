@@ -19,7 +19,6 @@ const Main = ({
   ]);
 
   useEffect(() => {
-    console.log("correctAnswers changed:", correctAnswers);
     const newData = [
       { name: "Group A", value: correctAnswers },
       { name: "Group B", value: 15 - correctAnswers },
